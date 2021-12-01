@@ -1,0 +1,113 @@
+/**
+ * @name Needless Removal
+ * @author Encode42
+ * @version 1.0.0
+ * @description Remove and improve useless or clunky elements of Discord.
+ * @website https://encode42.dev/
+ * @source https://github.com/Encode42/NeedlessRemoval/needlessRemoval.css
+ * @authorId 272466470510788608
+*/
+
+/*
+	Note: This is most likely not compatible with most themes.
+	I'll try my best, but I personally don't use any theme besides the default dark.
+*/
+
+/** Improve chatbox **/
+/* Remove Gift Nitro and GIF Picker button */
+.buttons-3JBrkn button[aria-label="Send a gift"],
+.buttons-3JBrkn button[aria-label="Open GIF picker"],
+.buttons-3JBrkn button[aria-label="Open sticker picker"] {
+	display: none
+}
+/* Remove quick reactions */
+.menu-3sdvDG[aria-label="Message Actions"] .scroller-3BxosC .wrapper-3_530D {
+	display: none
+}
+/* Remove scrollbar */
+.channelTextArea-rNsIhG .scrollableContainer-2NUZem {
+	overflow-y: hidden;
+	padding-right: 10px
+}
+
+/** Improve emoji views **/
+.emoji-236_Ij {
+	width: 2rem;
+	height: 2rem;
+}
+.emoji.jumboable.primaryEmoji-3LinDq {
+	min-width: 5rem;
+	height: 5rem;
+}
+
+/** Improve server view **/
+/* Remove some top bar buttons*/
+.iconWrapper-2OrFZ1[aria-label="Inbox"],
+.iconWrapper-2OrFZ1[aria-label="Help"],
+.iconWrapper-2OrFZ1[aria-label^="Mute channel"] {
+	display: none
+}
+/* Remove redundant channel icons */
+.inviteToolbar-3F-l2g .divider-3FBTu8,
+.layout-2DM8Md .children-gzQq2t,
+.children-3rEycc .iconItem-F7GRxr,
+.children-L002ao .addButton-3bLyEA {
+	display: none !important
+}
+/* Inherit user bar color */
+.panels-j1Uci_ div {
+	background-color: var(--background-secondary);
+	border-bottom: none;
+	margin-bottom: 0
+}
+.actionButtons-14eAc_ div {
+	background-color: inherit
+}
+
+/** Improve friends view **/
+/* Remove activity bar, stage discovery, and Nitro tab */
+#private-channels-1, #private-channels-2, .nowPlayingColumn-2sl4cE {
+	display: none
+}
+/* Remove redundant icons */
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {
+	display: none
+}
+
+/** Improve user popout **/
+/* Remove footer, notes, and headers */
+.userPopout-xaxa6l .muted-3-7c5L, .note-1oo11U, .footer-3UKYOU {
+	display: none
+}
+.userPopout-xaxa6l .rolesList-1geHY1 {
+	margin-bottom: 0
+}
+/* Remove server boosting badge */
+.clickable-17BDii[aria-label^="Server boosting"] {
+	display: none
+}
+/* Remove nickname button */
+.setIdentityLink-1t8Ahd {
+	display: none
+}
+
+/** Improve user view **/
+.layer-2KE1M9 .focusLock-Ns3yie .root-3QyAh1 {
+	min-height: min-content
+}
+.layer-2KE1M9 .focusLock-Ns3yie .body-r6_QPy {
+	height: unset
+}
+
+/** Uncategorized changes **/
+/* Less noticable scrollbar */
+.auto-Ge5KZx::-webkit-scrollbar-thumb {
+	background-color: var(--background-secondary)
+}
+.auto-Ge5KZx::-webkit-scrollbar-track {
+	background: none
+}
+/* Remove the title bar branding */
+.wordmarkWindows-1v0lYD {
+	color: var(--toast-header)
+}
