@@ -1,8 +1,8 @@
 {
     "name": "Needless Removal",
     "description": "Remove and improve useless or clunky elements of Discord's style.",
+    "author": "Encode42",
     "version": "1.0.0",
-    "author": "Encode42#2222",
     "theme": "needlessRemoval.theme.css",
-    "license": "MPL-2.0"
+    "license": "MIT"
 }
