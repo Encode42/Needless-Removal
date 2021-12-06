@@ -73,6 +73,14 @@
 .privateChannelRecipientsInviteButtonIcon-3A3uTc {
 	display: none
 }
+/* Remove Nitro tab */
+.private-channels-uid_633___nitro {
+	display: none;
+}
+/* Goodbye Snowsgiving */
+.private-channels-uid_633___snowsgiving {
+	display: none;
+}
 
 /** Improve user popout **/
 /* Remove footer, notes, and headers */
